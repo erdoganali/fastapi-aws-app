@@ -7,4 +7,4 @@ source /fastapi/bin/activate
 git clone https://github.com/erdoganali/fastapi-aws-app.git
 cd /fastapi-aws-app/src/
 pip install -r requirements.txt
-gunicorn main:app --workers 1 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 --daemon
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
