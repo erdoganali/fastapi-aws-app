@@ -22,7 +22,8 @@ async def predict_churn(request: CreateUpdateChurn,
                         db: Session = Depends(get_db)):
     prediction = make_churn_prediction(model, request.dict()) 
     #db_insert_record = insert_request_to_db(request=request.dict(),prediction=prediction,client_ip=fastapi_req.client.host,db=db)
-    return {"db_record": db_insert_record}
+    #return {"db_record": db_insert_record}
+    return prediction 
 
 
 
