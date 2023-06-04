@@ -8,7 +8,7 @@ from sqlalchemy.orm import Session
 
 load_dotenv()
 
-create_db_and_tables()
+#create_db_and_tables()
 
 mlflow_tracking_uri = os.getenv("MLFLOW_TRACKING_URI")
 mlflow_s3_endpoint_url = os.getenv("MLFLOW_S3_ENDPOINT_URL")
