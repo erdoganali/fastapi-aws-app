@@ -15,6 +15,7 @@ mlflow_s3_endpoint_url = os.getenv("MLFLOW_S3_ENDPOINT_URL")
 model_name = os.getenv("MODEL_NAME")
 model_version = os.getenv("MODEL_VERSION")
 model_uri = os.getenv("MODEL_URI")  
-model = load_model(model_uri)  
+#model = load_model(model_uri)  
+model = load_model("saved_model/pipeline_churn_random_forest.pkl")  
 
 
