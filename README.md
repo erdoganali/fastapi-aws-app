@@ -11,4 +11,6 @@ terraform validate
 terraform plan 
 terraform apply --auto-approve
 terraform destroy --auto-approve
-  
+
+ssh -i ~/.ssh/mlops-aws ec2-user@18.156.175.117
+
